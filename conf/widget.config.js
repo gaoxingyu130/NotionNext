@@ -2,7 +2,7 @@
  * 悬浮在网页上的挂件
  */
 module.exports = {
-  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || true, // 是否显示切换主题按钮
+  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
   // Chatbase 是否显示chatbase机器人 https://www.chatbase.co/
   CHATBASE_ID: process.env.NEXT_PUBLIC_CHATBASE_ID || null,
   // WebwhizAI 机器人 @see https://github.com/webwhiz-ai/webwhiz
@@ -15,7 +15,7 @@ module.exports = {
   DIFY_CHATBOT_TOKEN: process.env.NEXT_PUBLIC_DIFY_CHATBOT_TOKEN || '',
 
   // 悬浮挂件
-  WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // 是否显示宠物挂件
+  WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || false, // 是否显示宠物挂件
   WIDGET_PET_LINK:
     process.env.NEXT_PUBLIC_WIDGET_PET_LINK ||
     'https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
@@ -44,11 +44,11 @@ module.exports = {
         'http://s4.music.126.net/style/web2/img/default/default_album.jpg'
     },
     {
-      name: '王都グランセル',
-      artist: 'Falcom Sound Team jdk',
-      url: 'https://music.163.com/song/media/outer/url?id=731355.mp3',
+      name: '修炼爱情',
+      artist: 'JJ',
+      url: 'https://m801.music.126.net/20250914152011/27ffc7d4f798b11d75dfad76e407583b/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/26280113411/621d/d864/16f3/aaac86644aa2827e6cc6f086acc580b5.flac?vuutv=MvyQE63Vss2gGlYlqjpqdmcJ7ohM5GVUKkDKpuT9MJWNkfJ/EnKGt3pHZPDi3jCDAa3N2ZNPKFU8Hxgq1quwKwaxqh24CJ81w4SmklulFC0=',
       cover:
-        'https://p1.music.126.net/kn6ugISTonvqJh3LHLaPtQ==/599233837187278.jpg'
+        'http://s4.music.126.net/style/web2/img/default/default_album.jpg'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
